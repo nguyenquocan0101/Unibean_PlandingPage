@@ -63,5 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Form Submission (Handled by Google Form Iframe)
-    console.log('UNIBEAN Landing Page scripts initialized.');
+
+    // Randomize Coins
+    const coins = ['assets/images/unibean_coin.png', 'assets/images/unibean_coin2.png'];
+    const coinElements = document.querySelectorAll('.coin-random');
+    coinElements.forEach(el => {
+        const randomCoin = coins[Math.floor(Math.random() * coins.length)];
+        el.src = randomCoin;
+    });
+
+    console.log('UNIBEAN Landing Page Initialized');
 });

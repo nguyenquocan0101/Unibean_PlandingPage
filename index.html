@@ -109,14 +109,22 @@
                     <!-- Floating Performance Card -->
                     <div class="absolute -top-6 -left-6 hidden sm:block w-48 rounded-xl bg-white p-4 shadow-2xl ring-1 ring-primary/20 z-20">
                         <div class="flex items-center gap-3">
-                            <div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-secondary">trending_up</span>
+                            <div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center p-1">
+                                <img src="assets/images/unibean_coin.png" alt="Coin" class="coin-random w-full h-full object-contain">
                             </div>
                             <div>
                                 <p class="text-[10px] font-bold uppercase text-slate-400">Hiệu suất</p>
                                 <p class="text-sm font-bold text-secondary">+24% Tuần này</p>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Floating Coins Decoration -->
+                    <div class="absolute -top-12 right-12 w-24 h-24 z-0 animate-bounce-slow opacity-70">
+                        <img src="assets/images/unibean_coin.png" alt="Floating Coin" class="coin-random">
+                    </div>
+                    <div class="absolute bottom-10 -left-14 w-16 h-16 z-0 animate-bounce-slow opacity-50" style="animation-delay: 1.5s;">
+                        <img src="assets/images/unibean_coin.png" alt="Floating Coin" class="coin-random">
                     </div>
                 </div>
             </div>
@@ -134,24 +142,24 @@
                 <div class="grid gap-8 md:grid-cols-3">
                     <div class="feature-card group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-2 hover:shadow-xl hover:ring-primary/30">
                         <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-[#207945] transition-colors group-hover:bg-primary">
-                            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                            <span class="material-symbols-outlined text-3xl">groups</span>
                         </div>
-                        <h3 class="mb-3 text-xl font-bold text-[#207945]">Hiện đại</h3>
-                        <p class="text-slate-600">Giao diện người dùng tối giản và tinh tế, tối ưu trải nghiệm trên mọi thiết bị.</p>
+                        <h3 class="mb-3 text-xl font-bold text-[#207945]">Cộng đồng STEM</h3>
+                        <p class="text-slate-600">Không gian kết nối, chia sẻ và cùng nhau phát triển của những người đam mê công nghệ.</p>
+                    </div>
+                    <div class="feature-card group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-2 hover:shadow-xl hover:ring-primary/30">
+                        <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary p-2">
+                            <img src="assets/images/unibean_coin.png" alt="Unibean Coin" class="coin-random">
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-[#207945]">Hệ thống Coin</h3>
+                        <p class="text-slate-600">Cơ chế tích lũy và sử dụng coin thông minh, ghi nhận mọi nỗ lực của từng cá nhân.</p>
                     </div>
                     <div class="feature-card group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-2 hover:shadow-xl hover:ring-primary/30">
                         <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-[#207945] transition-colors group-hover:bg-primary">
-                            <span class="material-symbols-outlined text-3xl">shield</span>
+                            <span class="material-symbols-outlined text-3xl">celebration</span>
                         </div>
-                        <h3 class="mb-3 text-xl font-bold text-[#207945]">Bảo mật</h3>
-                        <p class="text-slate-600">Hệ thống bảo mật dữ liệu tiêu chuẩn quốc tế với mã hóa đầu cuối 256-bit.</p>
-                    </div>
-                    <div class="feature-card group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-2 hover:shadow-xl hover:ring-primary/30">
-                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-[#207945] transition-colors group-hover:bg-primary">
-                            <span class="material-symbols-outlined text-3xl">sentiment_very_satisfied</span>
-                        </div>
-                        <h3 class="mb-3 text-xl font-bold text-[#207945]">Dễ sử dụng</h3>
-                        <p class="text-slate-600">Làm quen và sử dụng thành thạo chỉ trong vài phút với hướng dẫn trực quan.</p>
+                        <h3 class="mb-3 text-xl font-bold text-[#207945]">Ghi nhận & Thưởng</h3>
+                        <p class="text-slate-600">Khích lệ sự đóng góp thông qua hệ thống phần thưởng xứng đáng và linh hoạt.</p>
                     </div>
                 </div>
             </div>
@@ -166,38 +174,38 @@
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     <div class="grid-card flex flex-col gap-4">
                         <div class="aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-md">
-                            <img alt="Inventory Management" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_inventory.png"/>
+                            <img alt="Campaigns" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_inventory.png"/>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Quản lý kho</p>
-                            <p class="text-sm text-slate-500">Theo dõi tồn kho thời gian thực</p>
+                            <p class="text-lg font-bold">Campaign & Nhiệm vụ</p>
+                            <p class="text-sm text-slate-500">Tham gia hoạt động để nhận coin</p>
                         </div>
                     </div>
                     <div class="grid-card flex flex-col gap-4">
                         <div class="aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-md">
-                            <img alt="Reporting" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_report.png"/>
+                            <img alt="Group Wallet" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_report.png"/>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Báo cáo thực tế</p>
-                            <p class="text-sm text-slate-500">Hệ thống biểu đồ trực quan</p>
+                            <p class="text-lg font-bold">Ví nhóm chung</p>
+                            <p class="text-sm text-slate-500">Quản lý ngân sách nhóm hiệu quả</p>
                         </div>
                     </div>
                     <div class="grid-card flex flex-col gap-4">
                         <div class="aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-md">
-                            <img alt="Automation" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_automation.png"/>
+                            <img alt="Rewards" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_automation.png"/>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Tối ưu hóa</p>
-                            <p class="text-sm text-slate-500">Tự động hóa các quy trình lặp lại</p>
+                            <p class="text-lg font-bold">Kho quà tặng</p>
+                            <p class="text-sm text-slate-500">Đổi coin lấy voucher, quà giá trị</p>
                         </div>
                     </div>
                     <div class="grid-card flex flex-col gap-4">
                         <div class="aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-md">
-                            <img alt="API Integration" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_api.png"/>
+                            <img alt="QR Integration" class="h-full w-full object-cover transition-transform hover:scale-110 duration-500" src="assets/images/feat_api.png"/>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Kết nối API</p>
-                            <p class="text-sm text-slate-500">Tích hợp linh hoạt hệ thống</p>
+                            <p class="text-lg font-bold">Quét mã QR</p>
+                            <p class="text-sm text-slate-500">Tiện lợi khi nhận coin và đổi quà</p>
                         </div>
                     </div>
                 </div>
@@ -210,21 +218,38 @@
                 <div class="mb-16">
                     <h2 class="text-3xl font-black text-primary">Cách hoạt động</h2>
                 </div>
-                <div class="relative grid gap-12 lg:grid-cols-3">
+                <div class="relative grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+                    <!-- Step 1 -->
                     <div class="relative z-10 step-item">
                         <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-black text-[#207945] shadow-lg shadow-black/10">1</div>
-                        <h3 class="text-xl font-bold mb-3 text-white">Đăng ký tài khoản</h3>
-                        <p class="text-slate-300">Chỉ mất 2 phút để khởi tạo hệ thống cho doanh nghiệp của bạn.</p>
+                        <h3 class="text-lg font-bold mb-2 text-white">Đăng ký</h3>
+                        <p class="text-sm text-slate-300">Người dùng điền form để đăng ký tham gia chương trình tester.</p>
                     </div>
+                    <!-- Step 2 -->
                     <div class="relative z-10 step-item">
                         <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-black text-[#207945] shadow-lg shadow-black/10">2</div>
-                        <h3 class="text-xl font-bold mb-3 text-white">Tùy chỉnh cấu hình</h3>
-                        <p class="text-slate-300">Cài đặt các thông số và quy trình làm việc phù hợp với nhu cầu.</p>
+                        <h3 class="text-lg font-bold mb-2 text-white">Tải ứng dụng</h3>
+                        <p class="text-sm text-slate-300">Sau khi được duyệt, người dùng tải app từ Google Play.</p>
                     </div>
+                    <!-- Step 3 -->
                     <div class="relative z-10 step-item">
                         <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-black text-[#207945] shadow-lg shadow-black/10">3</div>
-                        <h3 class="text-xl font-bold mb-3 text-white">Bắt đầu vận hành</h3>
-                        <p class="text-slate-300">Mời nhân viên và bắt đầu quản lý công việc hiệu quả hơn.</p>
+                        <h3 class="text-lg font-bold mb-2 text-white">Hoạt động</h3>
+                        <p class="text-sm text-slate-300">Check-in campaign, hoàn thành nhiệm vụ và tương tác cộng đồng.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="relative z-10 step-item">
+                        <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary shadow-lg shadow-black/10 overflow-hidden p-2">
+                            <img src="assets/images/unibean_coin.png" alt="Unibean Coin" class="coin-random w-full h-full object-contain">
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-white">Nhận coin</h3>
+                        <p class="text-sm text-slate-300">Hệ thống cấp coin sau khi hoàn thành nhiệm vụ hoặc quét QR.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="relative z-10 step-item">
+                        <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-black text-[#207945] shadow-lg shadow-black/10">5</div>
+                        <h3 class="text-lg font-bold mb-2 text-white">Đổi thưởng</h3>
+                        <p class="text-sm text-slate-300">Sử dụng coin để đổi các voucher hoặc quà tặng hấp dẫn.</p>
                     </div>
                     <!-- Decorative Line -->
                     <div class="absolute top-8 left-0 hidden h-0.5 w-full bg-white/10 lg:block"></div>
@@ -237,36 +262,75 @@
             <div class="mx-auto max-w-3xl px-6">
                 <h2 class="mb-12 text-center text-3xl font-black text-[#207945]">Câu hỏi thường gặp</h2>
                 <div class="space-y-4 accordion-group">
+                    <!-- Q1 -->
                     <div class="accordion-item rounded-xl border border-slate-200 bg-white overflow-hidden">
                         <button class="accordion-header flex w-full items-center justify-between p-6 text-left font-bold text-slate-900 transition-colors hover:bg-slate-50">
-                            <span>Chi phí sử dụng UNIBEAN là bao nhiêu?</span>
+                            <span>1. UNIBEAN là gì?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="p-6 pt-0 text-slate-600">
-                                UNIBEAN cung cấp nhiều gói dịch vụ linh hoạt phù hợp với quy mô từ startup đến doanh nghiệp lớn. Hãy liên hệ với chúng tôi để nhận báo giá chi tiết.
+                                UNIBEAN là ứng dụng tích điểm nội bộ dành cho cộng đồng STEM.
                             </div>
                         </div>
                     </div>
+                    <!-- Q2 -->
                     <div class="accordion-item rounded-xl border border-slate-200 bg-white overflow-hidden">
                         <button class="accordion-header flex w-full items-center justify-between p-6 text-left font-bold text-slate-900 transition-colors hover:bg-slate-50">
-                            <span>Tôi có thể hủy dịch vụ bất cứ lúc nào không?</span>
+                            <span>2. Làm thế nào để kiếm coin?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="p-6 pt-0 text-slate-600">
-                                Có, bạn có thể hủy gói đăng ký bất cứ lúc nào. Dữ liệu của bạn sẽ được bảo lưu trong vòng 30 ngày để bạn có thể sao lưu.
+                                Bạn có thể kiếm coin bằng cách tham gia campaign, hoàn thành nhiệm vụ hoặc nhận thưởng từ hệ thống.
                             </div>
                         </div>
                     </div>
+                    <!-- Q3 -->
                     <div class="accordion-item rounded-xl border border-slate-200 bg-white overflow-hidden">
                         <button class="accordion-header flex w-full items-center justify-between p-6 text-left font-bold text-slate-900 transition-colors hover:bg-slate-50">
-                            <span>Dữ liệu của tôi được bảo vệ như thế nào?</span>
+                            <span>3. Thành viên có thể tặng coin cho nhau không?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="p-6 pt-0 text-slate-600">
-                                Chúng tôi sử dụng mã hóa AES-256 tiêu chuẩn quân đội và các trung tâm dữ liệu đạt chuẩn Tier 3 để đảm bảo an toàn tuyệt đối.
+                                Có. Người dùng có thể tặng coin để ghi nhận sự hỗ trợ và đóng góp.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q4 -->
+                    <div class="accordion-item rounded-xl border border-slate-200 bg-white overflow-hidden">
+                        <button class="accordion-header flex w-full items-center justify-between p-6 text-left font-bold text-slate-900 transition-colors hover:bg-slate-50">
+                            <span>4. Coin dùng để làm gì?</span>
+                            <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-6 pt-0 text-slate-600">
+                                Coin có thể dùng để đổi voucher, quà tặng hoặc ưu đãi trong hệ sinh thái.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q5 -->
+                    <div class="accordion-item rounded-xl border border-slate-200 bg-white overflow-hidden">
+                        <button class="accordion-header flex w-full items-center justify-between p-6 text-left font-bold text-slate-900 transition-colors hover:bg-slate-50">
+                            <span>5. Ví nhóm là gì?</span>
+                            <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-6 pt-0 text-slate-600">
+                                Mỗi nhóm có một ví chung do leader quản lý để thưởng coin cho thành viên.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q6 -->
+                    <div class="accordion-item rounded-xl border border-slate-200 bg-white overflow-hidden">
+                        <button class="accordion-header flex w-full items-center justify-between p-6 text-left font-bold text-slate-900 transition-colors hover:bg-slate-50">
+                            <span>6. Làm sao để tham gia tester?</span>
+                            <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-6 pt-0 text-slate-600">
+                                Bạn có thể điền form đăng ký trên landing page.
                             </div>
                         </div>
                     </div>
