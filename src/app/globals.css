@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #16a34a;
+  --color-primary-hover: #15803d;
+  --color-text-main: #18181b; /* zinc-900 */
+  --color-text-muted: #52525b; /* zinc-600 */
+  --color-background: #fafafa; /* zinc-50 */
+
+  /* Shadows for Liquid Glass & Diffusion */
+  --shadow-liquid-glass: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 8px 32px rgba(0, 0, 0, 0.04);
+  --shadow-diffusion: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+
+  /* Fonts */
+  --font-display: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Base custom styles to retain structure without utility bloat */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Mask for seamless gradients or marquees */
+.mask-linear-x {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
