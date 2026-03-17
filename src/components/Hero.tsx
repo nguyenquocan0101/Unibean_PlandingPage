@@ -76,7 +76,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="relative lg:h-[600px] w-full flex items-center justify-center lg:justify-end z-30"
+          className="relative lg:h-[600px] w-full flex items-center justify-center lg:justify-center z-30"
         >
           {/* Main Mobile App Container */}
           <motion.div
