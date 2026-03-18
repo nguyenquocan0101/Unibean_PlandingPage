@@ -1,17 +1,18 @@
-import type { Metadata } from 'next';
-import { Outfit } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Outfit } from "next/font/google";
+import "./globals.css";
 
 const outfit = Outfit({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-outfit',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-outfit",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'UNIBEAN | Tích Bean Đổi Quà',
-  description: 'Unibean là hệ thống kết nối hoạt động người dùng với những trải nghiệm và phần thưởng thực tế.',
+  title: "UNIBEAN | Tích Bean Đổi Quà",
+  description:
+    "Unibean là hệ thống kết nối hoạt động người dùng với những trải nghiệm và phần thưởng thực tế.",
 };
 
 export default function RootLayout({
@@ -21,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className="scroll-smooth antialiased">
-      <body className={`${outfit.variable} font-sans bg-zinc-50 text-zinc-900 min-h-[100dvh]`}>
+      <body
+        className={`${outfit.variable} font-sans bg-zinc-50 text-zinc-900 min-h-[100dvh]`}
+      >
         {/* Abstract Noise Materiality Filter */}
         <div
           className="fixed inset-0 z-50 pointer-events-none opacity-[0.015]"
